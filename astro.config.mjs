@@ -7,5 +7,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()]
   site: 'https://Zer0M4n.github.io',
-  base: 'mi-repo',
+  base: 'portfolio-dev',
 });
