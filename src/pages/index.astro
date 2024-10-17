@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro'
+//import Card from '../components/Card.astro';
+import Social from '../components/Social.astro'
+import Linkedin from '../components/icons/linkedin.astro';
+import Github from '../components/icons/github.astro';
+import Gmail from "../components/icons/gmail.astro"
+import Microsoft_Learn from "../components/icons/microsoft_learn.astro"
+---
+
+<Layout title="Porfolio the Cesar Gonzalez ">
+	<main>
+		<section class="w-full mx-auto lg:w-[750px]  py-44">
+			<img 
+				class="rounded-full size-12 mb-4"
+				src="https://i.pinimg.com/236x/13/b2/31/13b231ebdef52ce9b231e609a5a54b15.jpg" 
+				alt="My photo"	
+			/> 
+			<h1 class="text-white text-5xl  font-bold flex  flex-row gap-x-4 pb-4 " >
+				Hello i am Cesar <a 
+				href="https://www.linkedin.com/in/cesar-gonzalez-salazar-153468263/" 
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center"> 
+					<Badge> Disponible para chambear</Badge></a>  
+			</h1>
+			<h2 class="text-2xl opacity-80 text-wrap">
+				I am student university in ITT 5
+			</h2>
+			
+			<nav class="flex gap-x-5 mt-8">
+				<Social 
+				href = "https://www.linkedin.com/in/cesar-gonzalez-salazar-153468263/"
+				target="_blank"
+				rel="noopener">  
+					<Linkedin class = "size-6" />
+					LinkedIn
+				</Social>
+				<Social
+				href = "https://github.com/Zer0M4n"
+				target="_blank"
+				rel="noopener">
+					<Github class="size-6"/>
+					GitHub
+				</Social> 
+				<Social 
+				href = "https://www.linkedin.com/in/cesar-gonzalez-salazar-153468263/"
+				target="_blank"
+				rel="noopener">
+					<Microsoft_Learn class="size-6"/>
+					Microsoft Learn
+				</Social>
+				<Social>
+					<Gmail class = "size-6"/>
+					Correo
+				</Social>
+			</nav>
+		</section>
+	</main>
+</Layout>
