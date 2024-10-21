@@ -1,61 +1,104 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro'
-//import Card from '../components/Card.astro';
-import Social from '../components/Social.astro'
-import Linkedin from '../components/icons/linkedin.astro';
-import Github from '../components/icons/github.astro';
-import Gmail from "../components/icons/gmail.astro"
-import Microsoft_Learn from "../components/icons/microsoft_learn.astro"
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import CardProjects from "../components/Card_Projects.astro";
+import Social from "../components/Social.astro";
+import Linkedin from "../components/icons/linkedin.astro";
+import Github from "../components/icons/github.astro";
+import Gmail from "../components/icons/gmail.astro";
+import Microsoft_Learn from "../components/icons/microsoft_learn.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/Section_Container.astro";
+import Projects_Article from "../components/Projects_Article.astro";
+import Brief from "../components/icons/brief.astro";
+import FileCode from "../components/icons/file_code.astro";
 ---
 
-<Layout title="Porfolio the Cesar Gonzalez ">
-	<main>
-		<section class="w-full mx-auto lg:w-[750px]  py-44">
-			<img 
-				class="rounded-full size-12 mb-4"
-				src="https://i.pinimg.com/236x/13/b2/31/13b231ebdef52ce9b231e609a5a54b15.jpg" 
-				alt="My photo"	
-			/> 
-			<h1 class="text-white text-5xl  font-bold flex  flex-row gap-x-4 pb-4 " >
-				Hello i am Cesar <a 
-				href="https://www.linkedin.com/in/cesar-gonzalez-salazar-153468263/" 
-				target="_blank"
-				rel="noopener"
-				class="flex justify-center items-center"> 
-					<Badge> Disponible para chambear</Badge></a>  
-			</h1>
-			<h2 class="text-2xl opacity-80 text-wrap">
-				I am student university in ITT 5
-			</h2>
+<Layout
+	title="Porfolio the Cesar Gonzalez-student computer system and programming "
+	description=""
+>
+	<main class="px-4">
+		<SectionContainer class="py-40 pb-27">
 			
-			<nav class="flex gap-x-5 mt-8">
-				<Social 
-				href = "https://www.linkedin.com/in/cesar-gonzalez-salazar-153468263/"
-				target="_blank"
-				rel="noopener">  
-					<Linkedin class = "size-6" />
+			<div >
+				<div class="flex gap-4 mb-4">
+					<div
+					class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600"
+				>
+				
+					<svg
+						class="absolute w-12 h-12 text-gray-400 -left-1"
+						fill="currentColor"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+						>
+						
+						<path
+							fill-rule="evenodd"
+							d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+							clip-rule="evenodd"></path>
+					</svg>
+				</div>
+				  <a
+					href="https://linkedin.com/in/midudev"
+					target="_blank"
+					rel="noopener"
+					class="flex items-center transition md:justify-center md:hover:scale-105"
+				  >
+					<Badge>Available for internships</Badge>
+				  </a>
+				</div>
+			</div>
+			<h1
+				class="text-white text-3xl lg:text-5xl md:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+			>
+				Hello, I'm Cesar Gonzalez
+			</h1>
+			<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
+				I'm a student of 5 semester of the Instituto Tecnologico de Tijuana, 
+				this page is useful to publish my projects and make myself known.
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<Social
+					href="https://www.linkedin.com/in/cesar-gonzalez-salazar-153468263/"
+				>
+					<Linkedin class="size-4 md:size-6" />
 					LinkedIn
 				</Social>
-				<Social
-				href = "https://github.com/Zer0M4n"
-				target="_blank"
-				rel="noopener">
-					<Github class="size-6"/>
+				<Social href="https://github.com/Zer0M4n">
+					<Github class="size-4 md:size-6" />
 					GitHub
-				</Social> 
-				<Social 
-				href = ""
-				target="_blank"
-				rel="noopener"> <!--Aqui va l urls de microsft learn -->
-					<Microsoft_Learn class="size-6"/>
+				</Social>
+				<Social href="">
+					<!--Aqui va l urls de microsft learn -->
+					<Microsoft_Learn class="size-4 md:size-6" />
 					Microsoft Learn
 				</Social>
 				<Social>
-					<Gmail class = "size-6"/>
-					Gmail
+					<Gmail class="size-4 md:size-6" />
+					Cesaraquiles@gmail.com
 				</Social>
 			</nav>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer class="py-40 pb-27" id="experience">
+			<h2 class="text-4xl font-semibold mb-6 flex gap-x-2 items-center">
+				<Brief></Brief>
+				Experiencia Laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer class="py-40 pb-27 flex flex-col items-center justify-center" id = "projects">
+			<h1 class=" text-center font-semibold text-5xl items-center flex pb-1">
+			  <FileCode />
+			  Recent Projects
+			</h1>
+			<Projects_Article >
+				
+			</Projects_Article>
+		  </SectionContainer>
 	</main>
 </Layout>
