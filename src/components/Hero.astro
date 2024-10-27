@@ -1,0 +1,70 @@
+---
+import  Badge  from "./Badge.astro";
+import  Social  from "./Social.astro";
+import  Linkedin  from "./icons/linkedin.astro";
+import  Github  from "./icons/github.astro";
+import  Gmail  from "./icons/gmail.astro";
+import  Microsoft_Learn  from "./icons/microsoft_learn.astro";
+---
+<div >
+    <div class="flex gap-4 mb-4">
+        <div
+        class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600"
+    >
+    
+        <svg
+            class="absolute w-12 h-12 text-gray-400 -left-1"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            
+            <path
+                fill-rule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </div>
+      <a
+        href="https://linkedin.com/in/midudev"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <Badge>Available for internships</Badge>
+      </a>
+    </div>
+</div>
+<h1
+    class=" text-neutral-950 dark:text-white text-3xl lg:text-5xl md:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10
+    "
+    
+>
+    Hello, I'm Cesar Gonzalez
+</h1>
+<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
+    I'm a student of 5 semester of the Instituto Tecnologico de Tijuana, 
+    this page is useful to publish my projects and make myself known.
+</h2>
+
+<nav class="flex gap-4 mt-8 flex-wrap">
+    <Social
+        href="https://www.linkedin.com/in/cesar-gonzalez-salazar-153468263/"
+    >
+        <Linkedin class="size-4 md:size-6" />
+        LinkedIn
+    </Social>
+    <Social href="https://github.com/Zer0M4n">
+        <Github class="size-4 md:size-6" />
+        GitHub
+    </Social>
+    <Social href="">
+        <!--Aqui va l urls de microsft learn -->
+        <Microsoft_Learn class="size-4 md:size-6" />
+        Microsoft Learn
+    </Social>
+    <Social>
+        <Gmail class="size-4 md:size-6" />
+        Cesaraquiles@gmail.com
+    </Social>
+</nav>

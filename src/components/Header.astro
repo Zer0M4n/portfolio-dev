@@ -1,12 +1,15 @@
-<header  class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto">  
+---
+import Toggle from "./Toggle.astro"
+---
+<header  class="px-10 flex flex-col justify-center items-center py-5 w-full xl:w-[1120px] lg: text- mx-auto gap-4">  
       <nav class="flex flex-row gap-x-10 opacity-80">
         
-        <a href="/my-repo/">Home</a>
-        <a href="#experience">Experience</a>
+        <a href="/portfolio-dev/">Home</a>
+        <!--<a href="#experience">Experience</a>-->
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-
+        <!--<a href="#contact">Contact</a>-->
+        <Toggle />
       </nav>
 
 </header>
