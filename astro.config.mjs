@@ -8,4 +8,8 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://zer0m4n.github.io',
   base: '/portfolio-dev/',
+  i18n: {
+    locales: ['en','es'],
+    defaultLocale: 'en',
+  },
 });

@@ -5,7 +5,14 @@ import  Linkedin  from "./icons/linkedin.astro";
 import  Github  from "./icons/github.astro";
 import  Gmail  from "./icons/gmail.astro";
 import  Microsoft_Learn  from "./icons/microsoft_learn.astro";
+
+//Language 
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
+
 <div >
     <div class="flex gap-4 mb-4">
         <div
@@ -31,7 +38,7 @@ import  Microsoft_Learn  from "./icons/microsoft_learn.astro";
         rel="noopener"
         class="flex items-center transition md:justify-center md:hover:scale-105"
       >
-        <Badge>Available for internships</Badge>
+        <Badge>{t("badge.title")}</Badge>
       </a>
     </div>
 </div>
@@ -40,11 +47,9 @@ import  Microsoft_Learn  from "./icons/microsoft_learn.astro";
     "
     
 >
-    Hello, I'm Cesar Gonzalez
-</h1>
+{t("hero.title")}</h1>
 <h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
-    I'm a student of 5 semester of the Instituto Tecnologico de Tijuana, 
-    this page is useful to publish my projects and make myself known.
+    {t("hero.subtitle")}
 </h2>
 
 <nav class="flex gap-4 mt-8 flex-wrap">
