@@ -4,7 +4,8 @@ export const languages = {
   };
   
   export const defaultLang = 'en';
-  
+  export const showDefaultLang = false;
+
   export const ui = {
     en: {
       'button': 'Button',
@@ -31,7 +32,6 @@ export const languages = {
       'hero.subtitle': 'Soy estudiante de 5 semestre del Instituto Tecnologico de Tijuana, esta pagina es util para publicar mis proyectos y darme a conocer.',
       //UI Badge
       'badge.title': 'Disponible para prácticas',
-
       
     },
-  } as const;
+  }as const;

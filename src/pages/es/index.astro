@@ -4,11 +4,14 @@ import Layout from "../../layouts/Layout.astro";
 //import Experience from "../components/Experience.astro";
 import SectionContainer from "../../components/Section_Container.astro";
 import Hero from "../../components/Hero.astro";
+import { getLangFromUrl } from '../../i18n/utils';
 
+const lang = getLangFromUrl(Astro.url);
 ---
 <Layout
 	title="Porfolio the Cesar Gonzalez-student computer system and programming "
 	description="lqljlkqklsjljwqs"
+	lang={lang}
 >
 	<main class="px-4">
 		<SectionContainer class="py-40 pb-27">
