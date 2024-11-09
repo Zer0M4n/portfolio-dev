@@ -26,11 +26,14 @@ export const languages = {
       //UI Footer
       'footer.rights': 'Todos los derechos reservados',
       'footer.contact': 'Contacto',
+      
       //UI Hero
       'hero.title': 'Hola, soy Cesar Gonzalez',
       'hero.subtitle': 'Soy estudiante de 5 semestre del Instituto Tecnologico de Tijuana, esta pagina es util para publicar mis proyectos y darme a conocer.',
       //UI Badge
       'badge.title': 'Disponible para prácticas',
+      //UI Footer
+      
       
     },
   }as const;

@@ -1,9 +1,11 @@
 ---
 import { languages } from '../i18n/ui';
 ---
-<ul class="flex flex-row gap-x-4 px-4">
+<ul class="flex flex-row gap-x-3 px-4 ">
   {Object.entries(languages).map(([lang, label]) => (
-    <li>
+    <li class="rounded-full border dark:border-white/10 border-black/15 justify-center items-center
+               py-1  md:py-2 md:px-4 drop-shadow-lg
+              dark:bg-white/5 bg-white hover:scale-110 dark:hover:bg-slate-300/65 hover:bg-black/10 transition">
       <a href={`/portfolio-dev/${lang}`}>{label}</a>
     </li>
   ))}

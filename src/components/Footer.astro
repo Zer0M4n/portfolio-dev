@@ -1,6 +1,8 @@
 ---
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Github from "./icons/github.astro";
+import Social from "./Social.astro";
 import ToggleLanguage from "./ToggleLanguage.astro";
 
 const lang = getLangFromUrl(Astro.url);
@@ -15,18 +17,27 @@ const t = useTranslations(lang);
   >
     <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
       >© {currentYear}
-      <a  class="hover:underline">CESAR GONZALEZ SALAZAR</a>. {t("footer.rights")}
+      <a class="hover:underline">CESAR GONZALEZ SALAZAR</a>. {
+        t("footer.rights")
+      }
     </span>
     <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
+      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0 gap-x-3"
     >
       <li>
-        <a id="contacto" href="mailto:cesaraquiles2000@gmail.com" class="hover:underline"
-          >{t("footer.contact")}</a
+        <a
+          id="contacto"
+          href="mailto:cesaraquiles2000@gmail.com"
+          class="hover:underline">{t("footer.contact")}</a
         >
       </li>
       <li>
-        <ToggleLanguage/>
+        <ToggleLanguage />
+      </li>
+      <li>
+        <Social  href = "https://github.com/Zer0M4n/portfolio-dev">
+          <Github class="size-2 md:size-4" />
+        </Social>
       </li>
     </ul>
   </div>
