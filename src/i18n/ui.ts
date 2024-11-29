@@ -18,6 +18,8 @@ export const languages = {
       'hero.subtitle': "I'm a student of 5 semester of the Instituto Tecnologico de Tijuana, this page is useful to publish my projects and make myself known.",
       //UI Badge
       'badge.title': 'Available for internships',
+      //CV
+      'CV.title' : 'My CV'
     },
     es: {
       'button': 'Botón',
@@ -33,6 +35,8 @@ export const languages = {
       //UI Badge
       'badge.title': 'Disponible para prácticas',
       //UI Footer
+
+      'CV.title' : 'Mi CV'
       
       
     },

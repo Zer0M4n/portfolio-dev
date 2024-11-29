@@ -4,6 +4,7 @@ import  Social  from "./Social.astro";
 import  Linkedin  from "./icons/linkedin.astro";
 import  Github  from "./icons/github.astro";
 import  Gmail  from "./icons/gmail.astro";
+import CV from "./icons/CV.astro"
 import  Microsoft_Learn  from "./icons/microsoft_learn.astro";
 
 //Language 
@@ -73,5 +74,9 @@ console.log(t);
     <Social  href="mailto:cesaraquiles2000@gmail.com">
         <Gmail class="size-4 md:size-6" />
         Cesaraquiles2000@gmail.com
+    </Social>
+    <Social href="/portfolio-dev/CESAR_CV_EN.pdf" download>
+        <CV/>
+        {t("CV.title")}
     </Social>
 </nav>
